@@ -1,0 +1,20 @@
+/* Page Starts Here */
+#page {
+    padding-bottom: 5rem;
+}
+#page h1 {
+    text-align: left;
+    max-width: none;
+    margin: 2rem 0;
+}
+
+#page p {
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+
+#page .nav {
+    background: linear-gradient(rgba(0,0,0,.95), rgba(0,0,0,.95));
+    margin-bottom: 3rem;
+}/* Page Ends Here */

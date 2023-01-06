@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Lora:wght@400;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,700;8..144,900&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: darkorange;
+    --text-white: #f1f1f1;
+}
+
+body {
+    background: var(--text-white);
+    color: #333;
+    font-family: 'Roboto Flex', sans-serif;
+    line-height: 1.2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    line-height: 1.8;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    text-transform: capitalize;
+    max-width: 50rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.1;
+    letter-spacing: .1rem;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    border: none;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 2px;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--text-white);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: rgb(209, 133, 41);
+    color: var(--text-white);
+}
+
+
+
+
+/* ===========================> */
+header {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.65)), url(../images/banner.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    z-index: 999;
+}
+
+.navbar .brand-name {
+    color: var(--text-white);
+    font-size: 1.5rem;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .menu .nav-list {
+    margin-left: 2rem;
+}
+
+.navbar .menu .nav-link {
+    color: var(--text-white);
+    padding: 10px 0;
+    transition: .5s;
+}
+
+.navbar .menu .nav-link:hover,
+.navbar .menu .nav-link:focus {
+    border-bottom: 2px solid rgb(209, 133, 41);
+    
+}
+
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+    margin-top: 10rem;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    max-width: 60rem;
+    line-height: 1.5;
+    font-family: 'Comic Neue', cursive;
+}
+
+.intro .btn {
+    margin-top: 3rem;
+    padding: .825rem 1.5rem;
+}
+
+.desc {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc h1 {
+    font-size: 2rem;
+}
+
+.desc-content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.desc-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 20rem;
+}
+
+.desc-content span {
+    margin: 3rem 0 2rem;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.desc-content div.one span {
+    background: url(../images/select-a-platform.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.desc-content div.two span {
+    background: url(../images/pick-a-product.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.desc-content div.three span {
+    background: url(../images/start-selling.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.what-we-teach {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.9)), url(../images/pattern.jpg);
+    background-size: cover;
+    color: var(--text-white);
+}
+
+.what-we-teach .content .btn {
+    margin-top: 1.5rem;
+}
+
+.affiliate {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.5rem;
+}
+
+.affiliate .affiliate-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2.5rem 0;
+}
+.affiliate .affiliate-content .content {
+    width: 50%;
+}
+.affiliate .affiliate-content .content-img {
+    width: 40%;
+    height: 16.25rem;
+    box-shadow: 0 1px 10px 2px #333;
+}
+
+.dropship {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropship .dropship-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2.5rem 0;
+}
+.dropship .dropship-content .content {
+    width: 50%;
+}
+.dropship .dropship-content .content-img {
+    width: 40%;
+    height: 16.25rem;
+    box-shadow: 0 1px 10px 2px #333;
+}
+
+.import {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.import .import-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 2.5rem 0 5rem;
+}
+.import .import-content .content {
+    width: 50%;
+}
+.import .import-content .content-img {
+    width: 40%;
+    height: 16.25rem;
+    box-shadow: 0 1px 10px 2px #333;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+    padding: 5rem 0;
+}
+
+.about .about-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+}
+
+.about .about-content .about-img {
+    width: 30%;
+}
+
+.about .about-content p {
+    width: 60%;
+    align-self: flex-start;
+}
+
+.about .btn {
+    display: inline-block;
+}
+
+.testimonies {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 3.5rem 0 0;
+}
+
+.testimonies .testimonies-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.testimonies .testimonies-content .content-img {
+    width: 25%;
+    height: 10rem;
+    border: 1px solid #00f;
+}
+
+.testimonies .btn {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+
+
+footer {
+    background: linear-gradient(rgba(0,0,0,.95), rgba(0,0,0,.95));
+    width: 100%;
+    height: auto;
+    padding: 5rem 0 2rem;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: #8f8f8f;
+    padding-bottom: 5rem;
+}
+
+footer .footer-content li {
+    line-height: 2;
+    font-size: .85rem;
+}
+
+footer .footer-content a {
+    color: #8f8f8f;
+    transition: .5s;
+}
+
+footer .footer-content a:hover {
+    color: var(--primary-color);
+}
+
+footer h2 {
+    font-size: 1.2rem;
+}
+
+.useful-links {
+    width: 25%;
+}
+
+.socials {
+    width: 25%;
+}
+
+.newsletter {
+    width: 30%;
+    background: #777;
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-white);
+    border-radius: 2px;
+}
+
+.newsletter p {
+    margin-bottom: 1rem;
+    color: var(--text-white)
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter form input {
+    border: 1px solid var(--primary-color);
+    background: transparent;
+    border-radius: 2px;
+    padding: .5rem;
+    outline: none;
+    background: #333;
+    color: #8f8f8f;
+}
+
+.newsletter form .btn {
+    margin-top: 1rem;
+    border-radius: 2px;
+}
+
+footer p {
+    text-align: center;
+    color: #8f8f8f;
+    font-size: .85rem;
+}
+
+footer p a {
+    color: var(--primary-color);
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
