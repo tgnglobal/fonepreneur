@@ -11,6 +11,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     background: var(--text-white);
     color: #333;
     font-family: 'Roboto Flex', sans-serif;
@@ -131,7 +132,10 @@ header {
 .navbar .menu .nav-link:hover,
 .navbar .menu .nav-link:focus {
     border-bottom: 2px solid rgb(209, 133, 41);
-    
+}
+
+.nav-toggler {
+    display: none;
 }
 
 .intro {
@@ -450,3 +454,109 @@ footer p a {
 footer p a:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY SCREEN AND */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 15vh;
+    }
+
+   .navbar .menu {
+        flex-direction: column;
+        /* display: none; */
+        position: fixed;
+        background: var(--text-white);
+        right: -17.5rem;
+        top: 0;
+        width: 15rem;
+        height: 100vh;
+        align-items: flex-start;
+        padding-top: 1rem;
+        transition: .3s;
+    }
+
+   .navbar .menu.active {
+        margin-right: 15rem;
+    }
+
+    .navbar .menu .nav-list {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .navbar .menu .nav-link {
+        color: #333;
+        padding: 0;
+    }
+    
+    .navbar .menu .nav-link:hover,
+    .navbar .menu .nav-link:focus {
+        border-bottom: none;
+    }
+
+    .navbar .menu .btn {
+        padding: 0;
+        background: transparent;
+        color: #333;
+    }
+
+    .nav-toggler {
+        display: block;
+        z-index: 999;
+    }
+
+    .bars {
+        display: block;
+        width: 1.5rem;
+        height: 2px;
+        margin-bottom: 7px;
+        background: #f1f1f1;
+    }
+
+    .bar-1.active {
+        background: #333;
+    }
+    .bar-2.active {
+        background: #333;
+    }
+    .bar-3.active.active {
+        background: #333;
+    }
+
+    .bars:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro {
+        margin-top: 5rem;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro .btn {
+        padding: .5rem 1rem;
+    }
+
+    .desc {
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .desc h1 {
+        font-size: 1.5rem;
+    }
+}
+
